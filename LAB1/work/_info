@@ -1,0 +1,84 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Coding\Verilog\CYCS_LogicDesignLab\LAB1
+vDFF
+Z1 Iz4n5feXn=Z_nLH;c71cCJ1
+Z2 V6dmoNESNUYEgAz7ogLIi42
+Z3 dE:\Coding\Verilog\CYCS_LogicDesignLab\LAB1
+Z4 w1726720180
+Z5 8E:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/ripple.V
+Z6 FE:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/ripple.V
+L0 2
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1726720271.749000
+Z9 !s107 E:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/ripple.V|
+Z10 !s90 -reportprogress|300|-work|work|E:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/ripple.V|
+Z11 o-work work -O0
+Z12 n@d@f@f
+Z13 !s100 z70>ZjFYRF>n]Y7mM25kM0
+!i10b 1
+!s85 0
+!s101 -O0
+vripple_carry_counter
+Z14 ISfIZRzGKSKRh?[o:nKckG2
+Z15 Vf8Amf0^U^MIYom3U6Eg>S1
+R3
+R4
+R5
+R6
+L0 27
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z16 !s100 fMzOQF[Wf<OJbzfLPm2oY2
+!i10b 1
+!s85 0
+!s101 -O0
+vTB
+!i10b 1
+!s100 OHL]1IELeUO;eC@ekNc>M3
+IzWPn1GW5m6UkaWB=b9J3@0
+Z17 VAhbn9Tlen:Nn4MMFkz_oT0
+R3
+w1726723551
+Z18 8E:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/TB.v
+Z19 FE:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/TB.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1726723561.828000
+!s107 E:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/TB.v|
+Z20 !s90 -reportprogress|300|-work|work|-O0|E:/Coding/Verilog/CYCS_LogicDesignLab/LAB1/TB.v|
+!s101 -O0
+R11
+n@t@b
+vTFF
+Z21 IfEB>nC?[lomz0^5j@0TEc2
+Z22 ViDj<C?<VmHB0[EUU^UEfQ0
+R3
+R4
+R5
+R6
+L0 16
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z23 n@t@f@f
+Z24 !s100 hnK?c9:F0<c;5AKhO_WBh0
+!i10b 1
+!s85 0
+!s101 -O0
