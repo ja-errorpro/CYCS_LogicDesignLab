@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Coding\Verilog\CYCS_LogicDesignLab\LAB2
+vDFF
+Z1 IfL]2aickUNlY6EY>Nkb>F0
+Z2 V6dmoNESNUYEgAz7ogLIi42
+Z3 dE:\Coding\Verilog\CYCS_LogicDesignLab\LAB2
+Z4 w1727325705
+Z5 8E:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/Shifter.v
+Z6 FE:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/Shifter.v
+L0 2
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1727325825.511000
+Z9 !s107 E:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/Shifter.v|
+Z10 !s90 -reportprogress|300|-work|work|E:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/Shifter.v|
+Z11 o-work work -O0
+Z12 n@d@f@f
+Z13 !s100 z@[D4T9mI=b]AaXIJ^E6m0
+!i10b 1
+!s85 0
+!s101 -O0
+vShift
+Z14 I4J[o@Z[Pki5UV@>;C5H_N3
+Z15 VZ=G7MY?XgIJn2O6HmnV;c3
+R3
+R4
+R5
+R6
+L0 16
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z16 n@shift
+Z17 !s100 NkO6JRk14dIhRYAGVGOSC3
+!i10b 1
+!s85 0
+!s101 -O0
+vTB
+!i10b 1
+!s100 NRifhT:>I@LaX1[`?BR2k3
+I_dB6FLJ^M>zmN?iD7Z^7W3
+Z18 VAhbn9Tlen:Nn4MMFkz_oT0
+R3
+w1727325979
+Z19 8E:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/TB.v
+Z20 FE:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/TB.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1727326135.454000
+!s107 E:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/TB.v|
+!s90 -reportprogress|300|-work|work|-O0|E:/Coding/Verilog/CYCS_LogicDesignLab/LAB2/TB.v|
+!s101 -O0
+R11
+n@t@b
