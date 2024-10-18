@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Coding\Verilog\CYCS_LogicDesignLab\LAB3
+vComparator
+Z1 IZF6_Fom<5XohDUYHUo<>a3
+Z2 V5LboIo[fi?D1b7PbfT<fa3
+Z3 dE:\Coding\Verilog\CYCS_LogicDesignLab\LAB3
+Z4 w1729143844
+Z5 8E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Comparator.v
+Z6 FE:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Comparator.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@comparator
+!i10b 1
+Z10 !s100 FNoGB?83=2lXk]E=]YOeF1
+!s85 0
+Z11 !s108 1729143878.963000
+Z12 !s107 E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Comparator.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Comparator.v|
+!s101 -O0
+vSimulate
+!i10b 1
+Z14 !s100 1e8;K5I6HMIm`RDHEEm0a3
+Z15 IWUE3G_F9W^d?_?6A_fLZV1
+Z16 V<KdPoW@:lFz99YLH:Cm8Y3
+R3
+Z17 w1729098146
+Z18 8E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Simulate.v
+Z19 FE:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Simulate.v
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1729143879.025000
+!s107 E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Simulate.v|
+!s90 -reportprogress|300|-work|work|E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Simulate.v|
+!s101 -O0
+R8
+Z20 n@simulate

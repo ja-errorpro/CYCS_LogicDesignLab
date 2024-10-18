@@ -1,0 +1,15 @@
+E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Simulate.v {1 {vlog -work work E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Simulate.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Simulate
+
+Top level modules:
+	Simulate
+
+} {} {}} E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Comparator.v {1 {vlog -work work E:/Coding/Verilog/CYCS_LogicDesignLab/LAB3/Comparator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Comparator
+
+Top level modules:
+	Comparator
+
+} {} {}}
