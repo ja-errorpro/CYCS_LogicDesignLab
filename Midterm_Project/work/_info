@@ -1,0 +1,84 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Coding\Verilog\CYCS_LogicDesignLab\Midterm_Project
+vDFF
+!i10b 1
+Z1 !s100 dE6XlAeEiJFnQo3H`ZZ=;2
+Z2 IE_AXJ4WD:;l6<UY@:l1k<0
+Z3 V6dmoNESNUYEgAz7ogLIi42
+Z4 dE:\Coding\Verilog\CYCS_LogicDesignLab\Midterm_Project
+Z5 w1730466966
+Z6 8E:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Shift_Register.v
+Z7 FE:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Shift_Register.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z9 !s108 1730466978.052000
+Z10 !s107 E:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Shift_Register.v|
+Z11 !s90 -reportprogress|300|-work|work|-O0|E:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Shift_Register.v|
+!s101 -O0
+Z12 o-work work -O0
+Z13 n@d@f@f
+vMUX4_1
+!i10b 1
+Z14 !s100 9WW^TPclYMOhbG1Rif;E01
+Z15 I91@JlC]MkJ3LWYXCkT8Eb1
+Z16 V4YEYS60E=2Koz;U91kzT]3
+R4
+R5
+R6
+R7
+L0 13
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z17 n@m@u@x4_1
+vShift_Register
+!i10b 1
+!s100 =K^A]MR4J5a]`?ggne:IF1
+IA>KKl?4djb;L@AE8IlbId1
+Z18 VkRMRU6lKjD<CjeRzn<fkA1
+R4
+R5
+R6
+R7
+L0 28
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+R12
+Z19 n@shift_@register
+vstimulus
+Z20 IS2c2TWOAmY<io4CjWZc7<1
+Z21 Vj_kQ[Pef^WSz:;eABMRPQ3
+R4
+Z22 w1637164882
+Z23 8E:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Midterm_Stimulus.v
+Z24 FE:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Midterm_Stimulus.v
+L0 1
+R8
+r1
+31
+R12
+Z25 !s100 d@K6D7PkkGUU<h`E@0mgo1
+Z26 !s108 1730465834.446000
+Z27 !s107 E:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Midterm_Stimulus.v|
+Z28 !s90 -reportprogress|300|-work|work|E:/Coding/Verilog/CYCS_LogicDesignLab/Midterm_Project/Midterm_Stimulus.v|
+!i10b 1
+!s85 0
+!s101 -O0
