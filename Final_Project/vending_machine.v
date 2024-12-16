@@ -32,7 +32,7 @@ initial begin
     change = 6'd0;
 end
 
-always @(posedge clk or posedge cancel) begin
+always @(posedge clk or posedge cancel or money) begin
     if(cancel) begin
         current_state <= S3;
     end
@@ -40,16 +40,14 @@ always @(posedge clk or posedge cancel) begin
         current_state <= next_state;
 end
 
-always @(negedge clk or total_money or drinkchoose) begin
-    next_state = current_state;
+always @(current_state or cancel or total_money) begin
+    // next_state = current_state;
     case(current_state)
         S0: begin
             prev_state = S0;
             if(cancel) begin 
                 next_state = S3;
             end
-            else if(drinkchoose > 0 && drinkchoose < 5)
-                next_state = S2;
             else if(total_money >= TEA)
                 next_state = S1;
             else
@@ -60,8 +58,6 @@ always @(negedge clk or total_money or drinkchoose) begin
             // total_money = total_money + money;
             if(money == 0 || (drinkchoose > 0 && drinkchoose < 5))
                 next_state = S2;
-            else if(cancel)
-                next_state = S3;
             else
                 next_state = S0;
         end
@@ -76,30 +72,21 @@ always @(negedge clk or total_money or drinkchoose) begin
     endcase
 end
 
-always @(negedge clk or current_state or money) begin
+always @(current_state or money) begin
     case(current_state)
         S0: begin
-            if(money != 0 && cancel == 0 && prev_state != S1 && prev_money != money) begin
+            if(money != 0 && cancel == 0 && prev_state != S3) begin
                 total_money = total_money + money;
-                $write("coin %d, total %d ", money, total_money);
-                if(total_money >= MILK) $display("tea | coke | coffee | milk");
-                else if(total_money >= COFFEE) $display("tea | coke | coffee");
-                else if(total_money >= COKE) $display("tea | coke");
-                else if(total_money >= TEA)  $display("tea");
-                else $display("");
-                prev_money = money;
+                $write("coin %d, total %d dollars ", money, total_money);
             end
         end
         S1: begin
-            if(money != 0 && cancel == 0 && prev_state != S0 && prev_money != money) begin
-                total_money = total_money + money;
-                $write("coin %d, total %d ", money, total_money);
+            if(cancel == 0 && prev_state != S0) begin
                 if(total_money >= MILK) $display("tea | coke | coffee | milk");
                 else if(total_money >= COFFEE) $display("tea | coke | coffee");
                 else if(total_money >= COKE) $display("tea | coke");
                 else if(total_money >= TEA)  $display("tea");
                 else $display("");
-                prev_money = money;
             end
         end
         S2: begin
@@ -123,7 +110,7 @@ always @(negedge clk or current_state or money) begin
         S3: begin
             if(cancel) begin
                 change = total_money;
-                $display("exchange %d dollars", change);
+                $display("\nexchange %d dollars", change);
                 total_money = 6'd0;
                 change = 6'd0;
             end

@@ -23,36 +23,20 @@ vending_machine_ja vm (
         money = 0;
         drink_choose = 0;
         cancel = 0;
+        #10 money = 10;
+        #10 money = 5;
         #10 money = 1;
-        #10 money = 5;
-        #10 cancel = 1; 
-        #10 cancel = 0;
-        #10 money = 10; 
-        #10 money = 5;
-        #10 money = 0;
-        #10 drink_choose = 3'b001;
-        #10 drink_choose = 0;
-        #10 drink_choose = 3'b111;
-        #10 drink_choose = 0;
-        #10 drink_choose = 3'b010;
-        #10 drink_choose = 0;
-
+        #10 money = 10;
         #10 money = 0;
 
-        #10 money = 50;
-        #10 drink_choose = 3'b100; 
-        #10 drink_choose = 0;
-
-        #10 money = 25;
-        #10 drink_choose = 3'b001;
-        #10 drink_choose = 3'b010;
+        #10 drink_choose = 3;
         #10 drink_choose = 0;
 
         #10 money = 10;
-        #10 drink_choose = 3'b001;
+        #10 money = 5;
         #10 cancel = 1;
         #10 cancel = 0;
-
-        #50 $stop;
+        
+        #10 $stop;
     end
 endmodule

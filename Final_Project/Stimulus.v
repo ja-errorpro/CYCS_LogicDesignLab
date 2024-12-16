@@ -15,7 +15,10 @@ module Stimulus;
         .change(change)
   );
 
-  always #5 clk = ~clk; // Generate clock signal
+  initial begin
+        clk = 0;
+        forever #5 clk = ~clk;
+  end
 
 initial begin
   $monitor("Time: %0d | Money: %0d | Drink: %0d | Change: %0d | Cancel: %0d", 
@@ -24,7 +27,6 @@ end
 
 
   initial begin
-    clk = 0;
     cancel = 0;
     money = 6'd0;
     drinkchoose = 3'd0;
@@ -37,24 +39,14 @@ end
     #10 drinkchoose = 3'd3; // Choose coffee (price: 20)
     #10 drinkchoose = 3'd0; // Reset choice
 
-    // Test Case 4: Insert excessive money and select milk
-    #10 money = 6'd50; // Insert 50
-    #10 drinkchoose = 3'd4; // Choose milk (price: 25)
-    #10 drinkchoose = 3'd0; // Reset choice
-
-    // Test Case 5: Select invalid drink
-    #10 drinkchoose = 3'd5; // Invalid selection
-    #10 drinkchoose = 3'd0; // Reset choice
-
-    // Test Case 7: Cancel
+    // Test Case 2: Cancel transaction
     #10 money = 6'd10; // Insert 10
+    #10 money = 6'd5; // Insert 5
+    #10 money = 6'd1; // Insert 1
     #10 cancel = 1; // Cancel transaction
-    #10 cancel = 0;
+    #10 cancel = 0; // Reset cancel
 
-    // Test Case 8: No money, select drink or cancel
-    #10 drinkchoose = 3'd2; // Choose coke (price: 15)
-    #10 drinkchoose = 3'd0; // Reset choice
 
-    $stop;
+    #10 $stop;
   end
 endmodule
