@@ -40,7 +40,7 @@ vending_machine_ja vm (
         #10 cancel = 1;
         #10 cancel = 0;
 
-        // Test 3
+        // Test 3: After cancel, insert duplicate money and choose a drink
         #10 money = 5;
         #10 money = 10;
         #10 money = 10;
@@ -48,6 +48,19 @@ vending_machine_ja vm (
         #10 drink_choose = 2;
         #10 drink_choose = 0;
         
-        #50 $stop;
+        // Test 4: Idle, and cancel
+        #50 
+        #10 money = 1;
+        #10 cancel = 1;
+        #10 cancel = 0;
+
+        // Test 5: Insert many 1 dollars
+        #10 money = 1;
+        #500 money = 0;
+        #10 drink_choose = 4;
+        #10 drink_choose = 0;
+
+
+        #10 $stop;
     end
 endmodule
