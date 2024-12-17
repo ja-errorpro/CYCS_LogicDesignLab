@@ -15,7 +15,7 @@ parameter S0 = 2'b00, // Initial state, waiting for money and display how much m
           // when cancel, return money and return to S0
 
 reg [1:0] current_state, next_state, prev_state;
-reg [5:0] prev_money = 6'd0;
+reg prev_is_cancel;
 
 
 // Price of drinks
@@ -32,7 +32,7 @@ initial begin
     change = 6'd0;
 end
 
-always @(posedge clk or posedge cancel or money) begin
+always @(clk or posedge cancel or money) begin
     if(cancel) begin
         current_state <= S3;
     end
@@ -72,16 +72,18 @@ always @(current_state or cancel or total_money) begin
     endcase
 end
 
-always @(current_state or money) begin
+always @(negedge clk or current_state or money) begin
     case(current_state)
         S0: begin
-            if(money != 0 && cancel == 0 && prev_state != S3) begin
+            if(money != 0 && cancel == 0 && prev_is_cancel == 0) begin
                 total_money = total_money + money;
                 $write("coin %d, total %d dollars ", money, total_money);
+                if(total_money < TEA) $display("");
             end
+            prev_is_cancel = 0;
         end
         S1: begin
-            if(cancel == 0 && prev_state != S0) begin
+            if(cancel == 0 && prev_state != S0 && next_state != S2) begin
                 if(total_money >= MILK) $display("tea | coke | coffee | milk");
                 else if(total_money >= COFFEE) $display("tea | coke | coffee");
                 else if(total_money >= COKE) $display("tea | coke");
@@ -109,6 +111,7 @@ always @(current_state or money) begin
         end
         S3: begin
             if(cancel) begin
+                prev_is_cancel = 1;
                 change = total_money;
                 $display("\nexchange %d dollars", change);
                 total_money = 6'd0;

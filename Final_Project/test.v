@@ -23,6 +23,8 @@ vending_machine_ja vm (
         money = 0;
         drink_choose = 0;
         cancel = 0;
+
+        // Test 1: Example testcase
         #10 money = 10;
         #10 money = 5;
         #10 money = 1;
@@ -32,11 +34,20 @@ vending_machine_ja vm (
         #10 drink_choose = 3;
         #10 drink_choose = 0;
 
+        // Test 2: Cancel the transcation
         #10 money = 10;
         #10 money = 5;
         #10 cancel = 1;
         #10 cancel = 0;
+
+        // Test 3
+        #10 money = 5;
+        #10 money = 10;
+        #10 money = 10;
+        #10 money = 0;
+        #10 drink_choose = 2;
+        #10 drink_choose = 0;
         
-        #10 $stop;
+        #50 $stop;
     end
 endmodule
