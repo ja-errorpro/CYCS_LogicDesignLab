@@ -55,7 +55,6 @@ always @(current_state or cancel or total_money) begin
         end
         S1: begin
             prev_state = S1;
-            // total_money = total_money + money;
             if(money == 0 || (drinkchoose > 0 && drinkchoose < 5))
                 next_state = S2;
             else

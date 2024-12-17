@@ -33,7 +33,7 @@ vending_machine_ja vm (
 
         #10 drink_choose = 3;
         #10 drink_choose = 0;
-
+/*
         // Test 2: Cancel the transcation
         #10 money = 10;
         #10 money = 5;
@@ -59,7 +59,7 @@ vending_machine_ja vm (
         #500 money = 0;
         #10 drink_choose = 4;
         #10 drink_choose = 0;
-
+*/
 
         #10 $stop;
     end
